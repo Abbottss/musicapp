@@ -1,0 +1,32 @@
+div>a{
+    display:inline-block;
+    width:50px;
+    font-size:10px;
+    text-align:center;
+    color:red
+}
+div>a> .iconfont{
+    display:block;
+    font-size:20px
+}
+div .news>span{
+    display:block
+}
+div>li{
+    height:30px
+}
+div>li i{
+    margin-right:10px
+}
+.bottom>li{
+    width:68px;
+    font-size:12px;
+    float:left;
+    text-align:center
+}
+.bottom>li> .iconfont{
+    width:15px;
+    display:inline-block;
+    font-size:16px;
+    margin-right:5px
+}
