@@ -1,5 +1,6 @@
 import React from "react";
 import "../aseets/style/drawer.css"
+import "../aseets/style/background.css"
 import { Drawer, Button, Radio } from 'antd';
 import { Upload, Icon, message ,Badge} from 'antd';
 import {
@@ -60,7 +61,8 @@ export default class DrawerLeft extends React.Component{
     );
     const { imageUrl } = this.state;
         return (
-            <div>
+            //外部点击进入抽屉（个人信息）
+            <div className="iconfont-div">          
                 <Button  onClick={this.showDrawer}>
                     <i className="iconfont">&#xe60a;</i>
                 </Button>

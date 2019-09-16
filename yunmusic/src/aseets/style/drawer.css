@@ -3,7 +3,7 @@ div>a{
     width:50px;
     font-size:10px;
     text-align:center;
-    color:red
+    /* color:red */
 }
 div>a> .iconfont{
     display:block;
@@ -29,4 +29,10 @@ div>li i{
     display:inline-block;
     font-size:16px;
     margin-right:5px
+}
+.iconfont-div{
+    display: inline-block
+}
+.iconfont-div>button{
+    border: none
 }
