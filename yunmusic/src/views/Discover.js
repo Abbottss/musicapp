@@ -1,8 +1,8 @@
 import React from "react";
 import Swiper from 'swiper/dist/js/swiper.js'
 import 'swiper/dist/css/swiper.min.css'
-import Carousel from "./Discover/Carousel"
-import axios from "axios"
+import Carousel from "./Discover/Carousel"//导入轮播图
+import Menu from "./Discover/Menu"//导入菜单
 import {Button,Layout} from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
 export default class Home extends React.Component{
@@ -15,10 +15,14 @@ export default class Home extends React.Component{
     render() {
         return (
           <div>
-            
-                  <Carousel></Carousel>
- 
+            <div style={{padding:'5px 10px'}}>
+              <Carousel></Carousel>
+            </div>
+            <div>
+              <Menu></Menu>
+            </div>
           </div>
+         
         );
       }
     

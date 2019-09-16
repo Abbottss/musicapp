@@ -1,0 +1,12 @@
+.menu-style{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #313639
+}
+.menu-style i{
+    color: #fff;
+    position: relative;
+    top: .625rem;
+    left: .125rem
+}

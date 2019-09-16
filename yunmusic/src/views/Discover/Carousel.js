@@ -1,8 +1,11 @@
-import React from "react";
+import React,{Fragment} from "react";
 import Swiper from 'swiper/dist/js/swiper.js'
 import 'swiper/dist/css/swiper.min.css'
-import "../../aseets/style/carousel.css";
+import "../../aseets/style/Discover/carousel.css";
 import axios from "axios"
+import {
+  
+} from "react-router-dom"
 class Carousel extends React.Component
 {
   constructor(props){
@@ -13,6 +16,7 @@ class Carousel extends React.Component
 }
   render(){
     return(
+      <Fragment>
         <div class="swiper-container">
           <div class="swiper-wrapper">
             {
@@ -36,6 +40,7 @@ class Carousel extends React.Component
           <div class="swiper-scrollbar">
           </div>
         </div>
+      </Fragment>
     )
     
 }
