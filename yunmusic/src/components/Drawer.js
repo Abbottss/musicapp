@@ -90,7 +90,7 @@ export default class DrawerLeft extends React.Component{
                                     <i className="iconfont">&#xe62a;</i>
                                 </Badge>
                             我的消息</Link>
-                            <Link to={"/"}><i className="iconfont">&#xe653;</i>我的好友</Link>
+                            <Link to={"/"}><i className="iconfont" onClick={this.onClose}>&#xe653;</i>我的好友</Link>
                             <Link to={"/"}><i className="iconfont">&#xe627;</i>听歌识曲</Link>
                             <Link to={"/"}><i className="iconfont">&#xe67a;</i>个性装扮</Link>
                         </div>
