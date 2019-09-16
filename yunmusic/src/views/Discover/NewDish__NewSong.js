@@ -6,16 +6,23 @@ export default class NewDish__NewSong extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            NewDish__NewSongList:[]
+            NewDishList:[],
+            NewSongList:[],
+            index:this.props.index
         }
     }
+    changeIndex(index){
+        this.setState({
+            index
+        })
+     }
     render(){
         return (
             <div className="NewDish__NewSong">
                 <div className="NewDish__NewSong-top">
                     <Row type="flex" justify="space-between">
                         <Col span={7}>
-                            <span className="NewDish__NewSong-title">新碟</span>  |  <span className="NewDish__NewSong-title">新歌</span>
+                            <span onClick={this.changeIndex.bind(this,0)} className={this.state.index===0?"active":"NewDish__NewSong-title"}>新碟</span>  |  <span onClick={this.changeIndex.bind(this,1)} className={this.state.index===1?"active":"NewDish__NewSong-title"}>新歌</span>
                               
                         </Col>
                         
@@ -25,16 +32,34 @@ export default class NewDish__NewSong extends React.Component{
                         </Col>
                     </Row>
                 </div>
-                <div className="NewDish__NewSong-bottom">
+                <div className="NewDish-bottom" style={{display:this.state.index===0?"block":"none"}}>
                      <Row type="flex" justify="space-around">
                     {
-                    (this.state.NewDish__NewSongList).map((item,i)=>(
+                    (this.state.NewDishList).map((item,i)=>(
                     (
                         <Col span={7} className="NewDish__NewSong-Row" style={{"WebkitBoxOrient": "vertical",marginBottom:"10px"}}>
                                 <div>
                                     <img style={{marginBottom:"10px"}} src={item.blurPicUrl} style={{width:'100%'}}/>
                                 </div>
-                                <span className="NewDish__NewSong-font">{item.name}</span>
+                                <span className="NewDish-font">{item.name}</span>
+                            </Col>
+                    )
+                    
+                    ))
+                    }
+                            
+                    </Row>
+                </div>
+                <div className="NewSong-bottom" style={{display:this.state.index===1?"block":"none"}}>
+                     <Row type="flex" justify="space-around">
+                    {
+                    (this.state.NewSongList).map((item,i)=>(
+                    (
+                        <Col span={7} className="NewSong-Row" style={{"WebkitBoxOrient": "vertical",marginBottom:"10px"}}>
+                                <div>
+                                    <img style={{marginBottom:"10px"}} src={item.album.blurPicUrl} style={{width:'100%'}}/>
+                                </div>
+                                <span className="NewSong-font">{item.name}</span>
                             </Col>
                     )
                     
@@ -48,14 +73,24 @@ export default class NewDish__NewSong extends React.Component{
         )
         
     }
-    async getNewDish__NewSongList(){
+    async getNewDishList(){
         const {data} =await axios.get(`http://localhost:4000/top/album?offset=0&limit=3`);
         this.setState({
-            NewDish__NewSongList:data.albums
+            NewDishList:data.albums
         })
       }
-      
+    async getNewSongList(){
+        const {data} =await axios.get(`http://localhost:4000/top/song?type=0`);
+        if(data.data.length>3){
+            data.data.length=3
+        }
+        this.setState({
+            NewSongList:data.data
+        })
+      }  
        async componentDidMount(){
-            this.getNewDish__NewSongList()
+           this.state.index=0
+            this.getNewDishList()
+            this.getNewSongList()
        }
 }
