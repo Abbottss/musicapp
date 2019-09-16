@@ -1,13 +1,14 @@
 import React from "react";
 import { Row, Col } from 'antd';
+import {withRouter} from 'react-router-dom';
 import "../../aseets/style/Discover/menu.css";
-export default class Menu extends React.Component{
+class Menu extends React.Component{
     render(){
         return (
             <div style={{textAlign:"center",padding:"10px 0"}}>
                  <Row type="flex" justify="space-around">
                     <Col span={4.2}>
-                        <div className="menu-style">
+                        <div className="menu-style" onClick={()=>{this.props.history.push("/dailySpecial")}}>
                         <i style={{fontSize:"25px",top:"0.655rem"}} className="iconfont">&#xe76d;</i>
                         </div>
                         <span style={{fontSize:"10px",display:"block",paddingTop:"7px"}}>每日推荐</span>
@@ -41,3 +42,4 @@ export default class Menu extends React.Component{
         )
     }
 }
+export default withRouter(Menu)

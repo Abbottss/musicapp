@@ -10,7 +10,7 @@ import Search from "./views/Search";            //搜索
 import {Button,Layout} from 'antd';
 import { Row, Col } from 'antd';
 import DrawerLeft from "./components/Drawer"    //个人信息展开栏（抽屉）
-import Carousel from "./views/Discover/Carousel"
+import DailySpecial from "./views/Discover/Menu/DailySpecial"
 import {
     BrowserRouter as Router,
     Route,
@@ -26,30 +26,32 @@ class App extends React.Component{
 
             <div >
                 <Router>
-                    <Layout> 
+                    <Layout>
                         <Header>
                             <Row type="flex" justify="space-between">
                                 <nav className="App-header">
-                            
+
                                     <Col span={4}><DrawerLeft></DrawerLeft></Col>
                                     <Col span={4}><NavLink to={"/my"} activeStyle={{color:'#fff',fontSize:'16px'}}>我的</NavLink></Col>
                                     <Col span={4}><NavLink to={"/discover"} activeStyle={{color:'#fff',fontSize:'16px'}}>发现</NavLink></Col>
                                     <Col span={4}><NavLink to={"/yunvillage"} activeStyle={{color:'#fff',fontSize:'16px'}}>云村</NavLink></Col>
                                     <Col span={4}><NavLink to={"/video"} activeStyle={{color:'#fff',fontSize:'16px'}}>视频</NavLink></Col>
                                     <Col span={4}><NavLink to={"/search"} activeStyle={{color:'#fff',fontSize:'16px'}}>搜索</NavLink></Col>
-                                    
+
                                 </nav>
                             </Row>
                         </Header>
                     </Layout>
                         <Switch>
-                                    
+
                             <Route path={"/my"} component={My}></Route>
                             <Route path={"/discover"} component={Discover}></Route>
                             <Route path={"/yunvillage"} component={YunVillage}></Route>
                             <Route path={"/video"} component={Video}></Route>
                             <Route path={"/search"} component={Search}></Route>
+                            <Route path={"/dailySpecial"} component={DailySpecial}></Route>
                             <Redirect from="/" to="/discover" />
+
                         </Switch>
                 </Router> 
                        
