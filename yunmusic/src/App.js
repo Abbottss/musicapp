@@ -30,25 +30,23 @@ class App extends React.Component{
                         <Header>
                             <Row type="flex" justify="space-between">
                                 <nav className="App-header">
-                            
                                     <Col span={4}><DrawerLeft></DrawerLeft></Col>
+                                   
                                     <Col span={4}><NavLink to={"/my"} activeStyle={{color:'#fff',fontSize:'16px'}}>我的</NavLink></Col>
                                     <Col span={4}><NavLink to={"/discover"} activeStyle={{color:'#fff',fontSize:'16px'}}>发现</NavLink></Col>
                                     <Col span={4}><NavLink to={"/yunvillage"} activeStyle={{color:'#fff',fontSize:'16px'}}>云村</NavLink></Col>
                                     <Col span={4}><NavLink to={"/video"} activeStyle={{color:'#fff',fontSize:'16px'}}>视频</NavLink></Col>
-                                    <Col span={4}><NavLink to={"/search"} activeStyle={{color:'#fff',fontSize:'16px'}}>搜索</NavLink></Col>
-                                    
+                                    <Col span={4}><NavLink to={"/search"} activeStyle={{color:'#fff',fontSize:'16px'}}><i className="iconfont">&#xe62c;</i></NavLink></Col>
                                 </nav>
                             </Row>
                         </Header>
                     </Layout>
-                        <Switch>
-                                    
+                        <Switch> 
+                            <Route path={"/search"} component={Search}></Route>   
                             <Route path={"/my"} component={My}></Route>
                             <Route path={"/discover"} component={Discover}></Route>
                             <Route path={"/yunvillage"} component={YunVillage}></Route>
                             <Route path={"/video"} component={Video}></Route>
-                            <Route path={"/search"} component={Search}></Route>
                             <Redirect from="/" to="/discover" />
                         </Switch>
                 </Router> 

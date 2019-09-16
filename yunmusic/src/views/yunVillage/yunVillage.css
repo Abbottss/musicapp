@@ -1,0 +1,16 @@
+.box nav{
+    height: 58px;
+    line-height: 58px;
+}
+.left{
+    color:white;
+    font-size: 14px;
+    margin-left: 150px;
+    padding-right: 8px
+}
+.right{
+    color:white;
+    font-size: 14px;
+    margin-right: 150px;
+    padding-left: 8px
+}
