@@ -1,34 +1,83 @@
-div>a{
-    display:inline-block;
-    width:50px;
+@import './reset.css';
+.ant-upload.ant-upload-select-picture-card{
+    width:65px;
+    height:65px;
+    background:#787677;
+    border-radius:50%;
+}
+.ant-upload.ant-upload-select-picture-card .ant-upload-text{
+    color:#fff;
+    font-size:12px;
+}
+.ant-drawer-left .ant-drawer-content-wrapper{
+    width:310px !important;
+}
+
+.top{
+    width:100%;
+    height:70px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #e6e6e6;
+}
+.top>a{
     font-size:10px;
     text-align:center;
-    /* color:red */
+    color:#000;
 }
-div>a> .iconfont{
+.top .news{
+    padding-top: 10px;
+}
+.top .iconfont{
     display:block;
-    font-size:20px
+    font-size:20px;
+    color:red;
+    padding-bottom:3px;
 }
-div .news>span{
+.top .news>span{
     display:block
 }
-div>li{
-    height:30px
+.ant-drawer-body{
+    padding-bottom:45px;
 }
-div>li i{
-    margin-right:10px
+.ant-drawer-body li>a{
+    color:#000;
+}
+.list{
+    margin-top:15px;
+}
+.list>div>li{
+    line-height:42px;
+}
+.list>div>li .iconfont{
+    margin-right:10px;
+}
+.creator{
+    padding: 10px 0;
+    border-top:1px solid #e6e6e6;
+    border-bottom:1px solid #e6e6e6;
+}
+.bottom{
+    border-top:1px solid #e6e6e6;
+    width:257px;
+    height:42px;
+    position: fixed;
+    bottom:0;
+    z-index: 1;
+    line-height:40px;
+    background: #fff;
 }
 .bottom>li{
-    width:68px;
-    font-size:12px;
-    float:left;
-    text-align:center
+    float: left;
+    color:#000;
+    width:33%;
+    text-align: center;
 }
-.bottom>li> .iconfont{
-    width:15px;
-    display:inline-block;
-    font-size:16px;
-    margin-right:5px
+.bottom>li .iconfont{
+    display: inline-block;
+    width: 10px;
+    padding-right: 25px;
 }
 .iconfont-div{
     display: inline-block
