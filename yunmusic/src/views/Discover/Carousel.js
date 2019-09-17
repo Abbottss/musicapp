@@ -45,14 +45,14 @@ class Carousel extends React.Component
     
 }
 async getBannerList(){
-  const {data} =await axios.get(`http://localhost:4000/banner?type=1`);
+  const {data} =await axios.get(`http://49.232.53.60:8080/banner?type=1`);
   this.setState({
       banner:data.banners
   })
   // console.log(this.state.banner)
 }
 
- async componentDidMount(){
+ componentDidMount(){
     this.getBannerList()
     new Swiper('.swiper-container',{
       slidesPerView: 1,

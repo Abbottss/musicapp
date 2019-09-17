@@ -37,9 +37,9 @@ export default class NewDish__NewSong extends React.Component{
                     {
                     (this.state.NewDishList).map((item,i)=>(
                     (
-                        <Col span={7} className="NewDish__NewSong-Row" style={{"WebkitBoxOrient": "vertical",marginBottom:"10px"}}>
+                        <Col span={7} className="NewDish__NewSong-Row" style={{"WebkitBoxOrient": "vertical",marginBottom:"0.14rem"}}>
                                 <div>
-                                    <img style={{marginBottom:"10px"}} src={item.blurPicUrl} style={{width:'100%'}}/>
+                                    <img style={{marginBottom:"0.15rem"}} src={item.blurPicUrl} style={{width:'100%'}}/>
                                 </div>
                                 <span className="NewDish-font">{item.name}</span>
                             </Col>
@@ -55,9 +55,9 @@ export default class NewDish__NewSong extends React.Component{
                     {
                     (this.state.NewSongList).map((item,i)=>(
                     (
-                        <Col span={7} className="NewSong-Row" style={{"WebkitBoxOrient": "vertical",marginBottom:"10px"}}>
+                        <Col span={7} className="NewSong-Row" style={{"WebkitBoxOrient": "vertical",marginBottom:"0.14rem"}}>
                                 <div>
-                                    <img style={{marginBottom:"10px"}} src={item.album.blurPicUrl} style={{width:'100%'}}/>
+                                    <img style={{marginBottom:"0.15rem"}} src={item.album.blurPicUrl} style={{width:'100%'}}/>
                                 </div>
                                 <span className="NewSong-font">{item.name}</span>
                             </Col>
@@ -74,13 +74,13 @@ export default class NewDish__NewSong extends React.Component{
         
     }
     async getNewDishList(){
-        const {data} =await axios.get(`http://localhost:4000/top/album?offset=0&limit=3`);
+        const {data} =await axios.get(`http://49.232.53.60:8080/top/album?offset=0&limit=3`);
         this.setState({
             NewDishList:data.albums
         })
       }
     async getNewSongList(){
-        const {data} =await axios.get(`http://localhost:4000/top/song?type=0`);
+        const {data} =await axios.get(`http://49.232.53.60:8080/top/song?type=0`);
         if(data.data.length>3){
             data.data.length=3
         }

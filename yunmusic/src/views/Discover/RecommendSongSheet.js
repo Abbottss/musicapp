@@ -29,9 +29,9 @@ export default class RecommendSongSheet extends React.Component{
                     {
                     (this.state.RecommendSongSheetList).map((item,i)=>(
                     (
-                        <Col span={7} className="RecommendSongSheet-Row" style={{"WebkitBoxOrient": "vertical",marginBottom:"10px"}}>
+                        <Col span={7} className="RecommendSongSheet-Row" style={{"WebkitBoxOrient": "vertical",marginBottom:"0.14rem"}}>
                                 <div>
-                                    <img style={{marginBottom:"10px"}} src={item.picUrl} style={{width:'100%'}}/>
+                                    <img style={{marginBottom:"0.15rem"}} src={item.picUrl} style={{width:'100%'}}/>
                                 </div>
                                 <span className="RecommendSongSheet-font">{item.name}</span>
                             </Col>
@@ -48,7 +48,7 @@ export default class RecommendSongSheet extends React.Component{
         
     }
     async getRecommendSongSheetList(){
-        const {data} =await axios.get(`http://localhost:4000/personalized?limit=6`);
+        const {data} =await axios.get(`http://49.232.53.60:8080/personalized?limit=6`);
         this.setState({
             RecommendSongSheetList:data.result
         })

@@ -17,16 +17,16 @@ export default class Home extends React.Component{
     render() {
         return (
           <div>
-            <div style={{padding:'20px 20px'}}>
+            <div style={{padding:'0.19rem'}}>
               <Carousel></Carousel>
             </div>
-            <div style={{borderBottom:"1px solid #7a8388"}}>
+            <div style={{borderBottom:"0.06rem solid #7a8388"}}>
               <Menu></Menu>
             </div>
-            <div style={{paddingTop:'49px'}}>
+            <div style={{paddingTop:'0.5rem'}}>
               <RecommendSongSheet></RecommendSongSheet>
             </div>
-            <div style={{paddingTop:'49px'}}>
+            <div style={{paddingTop:'0.5rem'}}>
               <NewDish__NewSong></NewDish__NewSong>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default class Home extends React.Component{
     //     // console.log(this.state.banner)
     // }
     
-    componentDidMount () {
+    async componentDidMount () {
     //轮播图
         var mySwiper = new Swiper('.swiper-container', {
           autoplay: true,
