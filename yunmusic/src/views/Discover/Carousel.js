@@ -49,17 +49,20 @@ async getBannerList(){
   this.setState({
       banner:data.banners
   })
-  console.log(this.state.banner)
+  // console.log(this.state.banner)
 }
 
  async componentDidMount(){
     this.getBannerList()
     new Swiper('.swiper-container',{
+      slidesPerView: 1,
+ 
         loop: true, // 循环模式选项
-    
+        autoplay:true,
         // 如果需要分页器
         pagination: {
           el: '.swiper-pagination',
+          // clickable: true,
         },
     
         // 如果需要前进后退按钮
