@@ -48,7 +48,7 @@ export default class RecommendSongSheet extends React.Component{
         
     }
     async getRecommendSongSheetList(){
-        const {data} =await axios.get(`http://localhost:4000/personalized?limit=6`);
+        const {data} =await axios.get(`http://49.232.53.60:8080/personalized?limit=6`);
         this.setState({
             RecommendSongSheetList:data.result
         })

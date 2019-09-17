@@ -74,13 +74,13 @@ export default class NewDish__NewSong extends React.Component{
         
     }
     async getNewDishList(){
-        const {data} =await axios.get(`http://localhost:4000/top/album?offset=0&limit=3`);
+        const {data} =await axios.get(`http://49.232.53.60:8080/top/album?offset=0&limit=3`);
         this.setState({
             NewDishList:data.albums
         })
       }
     async getNewSongList(){
-        const {data} =await axios.get(`http://localhost:4000/top/song?type=0`);
+        const {data} =await axios.get(`http://49.232.53.60:8080/top/song?type=0`);
         if(data.data.length>3){
             data.data.length=3
         }
