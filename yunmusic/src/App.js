@@ -32,11 +32,11 @@ class App extends React.Component{
                                 <nav className="App-header">
                             
                                     <Col span={4}><DrawerLeft></DrawerLeft></Col>
-                                    <Col span={4}><NavLink to={"/my"} activeStyle={{color:'#fff',fontSize:'16px'}}>我的</NavLink></Col>
-                                    <Col span={4}><NavLink to={"/discover"} activeStyle={{color:'#fff',fontSize:'16px'}}>发现</NavLink></Col>
-                                    <Col span={4}><NavLink to={"/yunvillage"} activeStyle={{color:'#fff',fontSize:'16px'}}>云村</NavLink></Col>
-                                    <Col span={4}><NavLink to={"/video"} activeStyle={{color:'#fff',fontSize:'16px'}}>视频</NavLink></Col>
-                                    <Col span={4}><NavLink to={"/search"} activeStyle={{color:'#fff',fontSize:'16px'}}>搜索</NavLink></Col>
+                                    <Col span={4}><NavLink to={"/my"} activeStyle={{color:'#fff',fontSize:'38px',position:"relative",top:"-3px"}}>我的</NavLink></Col>
+                                    <Col span={4}><NavLink to={"/discover"} activeStyle={{color:'#fff',fontSize:'38px',position:"relative",top:"-3px"}}>发现</NavLink></Col>
+                                    <Col span={4}><NavLink to={"/yunvillage"} activeStyle={{color:'#fff',fontSize:'38px',position:"relative",top:"-3px"}}>云村</NavLink></Col>
+                                    <Col span={4}><NavLink to={"/video"} activeStyle={{color:'#fff',fontSize:'38px',position:"relative",top:"-3px"}}>视频</NavLink></Col>
+                                    <Col span={4}><NavLink to={"/search"} activeStyle={{color:'#fff',fontSize:'38px',position:"relative",top:"-3px"}}>搜索</NavLink></Col>
                                     
                                 </nav>
                             </Row>

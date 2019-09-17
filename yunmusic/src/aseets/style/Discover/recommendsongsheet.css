@@ -7,13 +7,13 @@
     border-radius: 15px;
     padding:5px 10px;
     position: relative;
-    top: -2px
+    top: 1px
 }
 .RecommendSongSheet-top{
-    padding-bottom: 20px
+    padding-bottom: 16px
 }
 .RecommendSongSheet-bottom{
-    font-size: 14px
+    font-size: 12px
 }
 .RecommendSongSheet-font{
     display: block;
@@ -25,4 +25,7 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+}
+.RecommendSongSheet-title{
+    font-size: 16px
 }

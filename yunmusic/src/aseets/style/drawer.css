@@ -10,7 +10,7 @@
     font-size:12px;
 }
 .ant-drawer-left .ant-drawer-content-wrapper{
-    width:310px !important;
+    width:290px !important;
 }
 
 .top{
@@ -46,6 +46,7 @@
 }
 .list{
     margin-top:15px;
+    font-size: 12px
 }
 .list>div>li{
     line-height:42px;
@@ -84,4 +85,7 @@
 }
 .iconfont-div>button{
     border: none
+}
+.iconfont{
+    font-size: 14px
 }

@@ -8,33 +8,33 @@ export default class Menu extends React.Component{
                  <Row type="flex" justify="space-around">
                     <Col span={4.2}>
                         <div className="menu-style">
-                        <i style={{fontSize:"25px",top:"0.655rem"}} className="iconfont">&#xe76d;</i>
+                        <i style={{fontSize:"50px",top:"25px"}} className="iconfont">&#xe76d;</i>
                         </div>
-                        <span style={{fontSize:"13px",display:"block",paddingTop:"7px",color:"#fff"}}>每日推荐</span>
+                        <span style={{fontSize:"21px",display:"block",paddingTop:"12px",color:"#fff"}}>每日推荐</span>
                     </Col>
                     <Col span={4.2}>
                         <div className="menu-style">
-                        <i style={{fontSize:"47px",top:"0.08rem"}} className="iconfont">&#xe60f;</i>
+                        <i style={{fontSize:"100px",top:"0.08rem",left:"0.01rem"}} className="iconfont">&#xe60f;</i>
                         </div>
-                        <span style={{fontSize:"13px",display:"block",paddingTop:"7px",color:"#fff"}}>歌单</span>
+                        <span style={{fontSize:"21px",display:"block",paddingTop:"12px",color:"#fff"}}>歌单</span>
                     </Col>
                     <Col span={4.2}>
                         <div className="menu-style">
-                        <i style={{fontSize:"22px",top:"0.8rem"}} className="iconfont">&#xe618;</i>
+                        <i style={{fontSize:"53px",top:"23px"}} className="iconfont">&#xe618;</i>
                         </div>
-                        <span style={{fontSize:"13px",display:"block",paddingTop:"7px",color:"#fff"}}>排行榜</span>
+                        <span style={{fontSize:"21px",display:"block",paddingTop:"12px",color:"#fff"}}>排行榜</span>
                     </Col>
                     <Col span={4.2}>
                         <div className="menu-style">
-                        <i style={{fontSize:"28px",top:"0.6rem",left:"0.1rem"}} className="iconfont">&#xe66b;</i>
+                        <i style={{fontSize:"62px",top:"22px",left:"0.02rem"}} className="iconfont">&#xe66b;</i>
                         </div>
-                        <span style={{fontSize:"13px",display:"block",paddingTop:"7px",color:"#fff"}}>电台</span>
+                        <span style={{fontSize:"21px",display:"block",paddingTop:"12px",color:"#fff"}}>电台</span>
                     </Col>
                     <Col span={4.2}>
                         <div className="menu-style">
-                        <i style={{fontSize:"31px",left:"auto"}} className="iconfont">&#xe6e3;</i>
+                        <i style={{fontSize:"74px",left:"auto",top:"19px"}} className="iconfont">&#xe6e3;</i>
                         </div>
-                        <span style={{fontSize:"13px",display:"block",paddingTop:"7px",color:"#fff"}}>直播</span>
+                        <span style={{fontSize:"21px",display:"block",paddingTop:"12px",color:"#fff"}}>直播</span>
                     </Col>
                 </Row>
             </div>

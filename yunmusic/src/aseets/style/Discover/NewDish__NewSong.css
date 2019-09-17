@@ -7,13 +7,13 @@
     border-radius: 15px;
     padding:5px 10px;
     position: relative;
-    top: -2px
+    top: 2px
 }
 .NewDish__NewSong-top{
     padding-bottom: 20px
 }
 .NewDish-bottom{
-    font-size: 14px
+    font-size: 12px
 }
 .NewDish-font{
     display: block;
@@ -27,7 +27,7 @@
     -webkit-line-clamp: 2;
 }
 .NewSong-bottom{
-    font-size: 14px
+    font-size: 12px
 }
 .NewSong-Row{
     overflow : hidden;

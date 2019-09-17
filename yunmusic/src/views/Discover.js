@@ -17,16 +17,16 @@ export default class Home extends React.Component{
     render() {
         return (
           <div>
-            <div style={{padding:'5px 10px'}}>
+            <div style={{padding:'20px 20px'}}>
               <Carousel></Carousel>
             </div>
             <div style={{borderBottom:"1px solid #7a8388"}}>
               <Menu></Menu>
             </div>
-            <div style={{paddingTop:'29px'}}>
+            <div style={{paddingTop:'49px'}}>
               <RecommendSongSheet></RecommendSongSheet>
             </div>
-            <div style={{paddingTop:'29px'}}>
+            <div style={{paddingTop:'49px'}}>
               <NewDish__NewSong></NewDish__NewSong>
             </div>
           </div>
