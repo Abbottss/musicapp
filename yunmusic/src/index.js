@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Login from "./views/Login.js";
 import * as serviceWorker from './serviceWorker';
+import 'lib-flexible'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
