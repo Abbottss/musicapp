@@ -1,8 +1,8 @@
 import React from "react";
-export default class Home extends React.Component{
+export default class My extends React.Component{
     render(){
         return (
-            <div>My</div>
+            <div>Mv</div>
     )
     }
 }

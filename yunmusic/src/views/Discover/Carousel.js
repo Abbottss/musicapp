@@ -49,7 +49,7 @@ async getBannerList(){
   this.setState({
       banner:data.banners
   })
-  console.log(this.state.banner)
+  // console.log(this.state.banner)
 }
 
  async componentDidMount(){
