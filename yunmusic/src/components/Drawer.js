@@ -7,8 +7,9 @@ import {
     BrowserRouter as Router,
     Route,
     NavLink,
-    Link
-} from "react-router-dom"
+    Link,
+	withRouter
+} from "react-router-dom";
 function getBase64(img, callback) {
     const reader = new FileReader();
     reader.addEventListener('load', () => callback(reader.result));
@@ -25,7 +26,7 @@ function beforeUpload(file) {
     }
     return isJpgOrPng && isLt2M;
 }
-export default class DrawerLeft extends React.Component{
+ class DrawerLeft extends React.Component{
     state = { visible: false, placement: 'left',loading: false };
     handleChange = info => {
         if (info.file.status === 'uploading') {
@@ -127,3 +128,4 @@ export default class DrawerLeft extends React.Component{
         )
     }
 }
+export default withRouter(DrawerLeft)
