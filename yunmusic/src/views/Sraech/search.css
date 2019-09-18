@@ -1,0 +1,78 @@
+.head{
+    width: 100%;
+    height: 1.8rem;
+    background-color:#343730 ;
+    padding-left: .32rem;
+    line-height: 1.8rem;
+    position: relative;
+}
+input{
+    height: 1.2rem;
+    width: 7.2rem;
+    margin-left: .32rem;
+    background-color:#343730;
+    border-bottom: 0.01rem solid #afb2ab;
+    border-top: 0rem solid #343730;
+    border-left: 0rem solid #343730;
+    border-right: 0rem solid #343730;
+    color: #95968e;
+
+}
+
+.head div:nth-child(4) .iconfont{
+    display: block;
+    margin-left: .64rem;
+}
+.head div .iconfont{
+    display: block;
+    font-size: .6rem;
+   
+}
+.box{
+    width: 100%;
+    height: 1.8rem;
+    background-color:#343730 ;
+    line-height: 2rem;
+    text-align: start      
+}
+.box .iconfont{
+    display:inline-block;
+    font-size: .6rem;
+    color: #a1a2a4;
+    padding-left: 0.32rem;
+}
+
+.box span {
+    display: inline-block;
+    font-size: .6rem;
+    color: #a1a2a4;
+    margin-left: 0.32rem;
+}
+.list{
+    position: absolute;
+    left:.32rem ;
+    top: 1.3rem;
+    width: 9rem;
+    height: 10rem;
+    background-color: #202018;
+}
+.list .strip{
+    height: 1rem;
+    font-size: .5rem;
+    line-height: 1rem;
+    color: #95968e;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.list .strip .iconfont{
+    display:inline-block;
+    font-size: .5rem;
+}
+.list .top{
+    font-size: .5rem;
+    height: 1rem;
+    color: #537d8b;
+    line-height: 1rem;
+
+}

@@ -23,10 +23,7 @@ export default class NewDish__NewSong extends React.Component{
                     <Row type="flex" justify="space-between">
                         <Col span={7}>
                             <span onClick={this.changeIndex.bind(this,0)} className={this.state.index===0?"active":"NewDish__NewSong-title"}>新碟</span>  |  <span onClick={this.changeIndex.bind(this,1)} className={this.state.index===1?"active":"NewDish__NewSong-title"}>新歌</span>
-                              
                         </Col>
-                        
-                        
                         <Col span={7}>
                             <span className="NewDish__NewSong-square">更多新碟</span>
                         </Col>
@@ -38,11 +35,11 @@ export default class NewDish__NewSong extends React.Component{
                     (this.state.NewDishList).map((item,i)=>(
                     (
                         <Col span={7} className="NewDish__NewSong-Row" style={{"WebkitBoxOrient": "vertical",marginBottom:"0.14rem"}}>
-                                <div>
-                                    <img style={{marginBottom:"0.15rem"}} src={item.blurPicUrl} style={{width:'100%'}}/>
-                                </div>
-                                <span className="NewDish-font">{item.name}</span>
-                            </Col>
+                            <div>
+                                <img style={{marginBottom:"0.15rem"}} src={item.blurPicUrl} style={{width:'100%'}}/>
+                            </div>
+                            <span className="NewDish-font">{item.name}</span>
+                        </Col>
                     )
                     
                     ))

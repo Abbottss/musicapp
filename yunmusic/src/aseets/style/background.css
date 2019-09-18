@@ -16,3 +16,7 @@ div>a{
     color: #fff;
     font-size: 16px
 } */
+.App-header .iconfont{
+    display: block;
+    font-size: .8rem;
+}
