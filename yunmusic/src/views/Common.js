@@ -23,9 +23,9 @@ class Common extends React.Component{
         return (
 
             <div >
-				<Router>
+				
                     <Layout> 
-                        <Header>
+                        <Header style={{ position: 'fixed', zIndex: 10, width: '100%',height:"1.7rem" }}>
                             <Row type="flex" justify="space-between">
                                 <nav className="App-header">
              
@@ -41,14 +41,15 @@ class Common extends React.Component{
                         </Header>
                     </Layout>
                         <Switch>
-                            <Route path={"/discover"} component={Discover}></Route>
+                            <Route match='match' path={"/discover"} exact={true} component={Discover}></Route>
                             <Route path={"/yunvillage"} component={YunVillage}></Route>
                             <Route path={"/video"} component={Video}></Route>
+                           
                             <Route path={"/search"} component={Search}></Route>
 							<Route path={"/my"} component={My}></Route>
-                             <Redirect from="/" to="/discover" />
+                            <Redirect from="/" to="/discover" />
                         </Switch>
-                </Router>
+                
             </div>
         );
     }

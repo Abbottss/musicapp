@@ -22,7 +22,7 @@ export default class Mv extends React.Component{
         )
     }
     async getVideoList(id){
-        const {mList}= await axios.get(`http://localhost:4000/video/url`);
+        const {mList}= await axios.get(`http://49.232.53.60:8080/video/url`);
         this.setState({
             // VideoList:mList.data.splice(0,8)
         })

@@ -6,17 +6,16 @@ import Menu from "./Discover/Menu"//导入菜单
 import RecommendSongSheet from "./Discover/RecommendSongSheet"//导入推荐歌单
 import NewDish__NewSong from "./Discover/NewDish__NewSong"//导入推荐歌单
 import {Button,Layout} from 'antd';
+
 const { Header, Footer, Sider, Content } = Layout;
 export default class Home extends React.Component{
-//   constructor(props){
-//     super(props);
-//     this.state = {
-//        banner:[]
-//     }
-// }
+  constructor(props){
+    super(props);
+    
+}
     render() {
         return (
-          <div>
+          <div style={{ marginTop:"1.8rem", zIndex: 1, width: '100%' }}>
             <div style={{padding:'0.19rem'}}>
               <Carousel></Carousel>
             </div>
@@ -51,7 +50,6 @@ export default class Home extends React.Component{
               el: '.swiper-pagination',
           }
         });
-
         // this.getBannerList()
   }
  

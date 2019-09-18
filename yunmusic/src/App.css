@@ -3,9 +3,12 @@
 
 
 /* 头部总体样式 */
+*{
+  color: #fff
+}
 .ant-layout-header {
   padding: 0 0px;
-  width: 100%
+  width: 100%;
 }
 
 /* 头部导航样式 */

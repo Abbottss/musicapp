@@ -1,16 +1,19 @@
 /* 头部总体样式 */
 .ant-layout-header {
-    background: #313639
+    background: rgba(49, 54, 57, 0.9)
   }
 /* 头部抽屉按钮样式 */
 .iconfont-div>button{
-    background:#313639
+    background: rgba(49, 54, 57, 0.0)
 }
 .iconfont-div .iconfont{
     color: #fff
 }
 div>a{
     color: #ccc 
+}
+.ant-btn:hover, .ant-btn:focus, .ant-btn:active, .ant-btn.active{
+    background: rgba(49, 54, 57, 0.0)
 }
 /* div>a:hover{
     color: #fff;

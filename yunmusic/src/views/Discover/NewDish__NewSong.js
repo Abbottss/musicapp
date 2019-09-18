@@ -37,7 +37,7 @@ export default class NewDish__NewSong extends React.Component{
                     {
                     (this.state.NewDishList).map((item,i)=>(
                     (
-                        <Col span={7} className="NewDish__NewSong-Row" style={{"WebkitBoxOrient": "vertical",marginBottom:"0.14rem"}}>
+                        <Col span={7} className="NewSong-Row" style={{"WebkitBoxOrient": "vertical",marginBottom:"0.14rem"}}>
                                 <div>
                                     <img style={{marginBottom:"0.15rem"}} src={item.blurPicUrl} style={{width:'100%'}}/>
                                 </div>

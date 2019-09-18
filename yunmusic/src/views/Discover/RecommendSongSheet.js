@@ -2,7 +2,15 @@ import React from "react";
 import { Row, Col } from 'antd';
 import axios from "axios"
 import "../../aseets/style/Discover/recommendsongsheet.css";
-export default class RecommendSongSheet extends React.Component{
+// import SongSheet from "./SongSheet"
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    NavLink,
+    withRouter
+} from "react-router-dom"
+export default withRouter(class RecommendSongSheet extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -11,6 +19,8 @@ export default class RecommendSongSheet extends React.Component{
     }
     render(){
         return (
+          <>
+
             <div className="RecommendSongSheet">
                 <div className="RecommendSongSheet-top">
                     <Row type="flex" justify="space-between">
@@ -30,11 +40,25 @@ export default class RecommendSongSheet extends React.Component{
                     (this.state.RecommendSongSheetList).map((item,i)=>(
                     (
                         <Col span={7} className="RecommendSongSheet-Row" style={{"WebkitBoxOrient": "vertical",marginBottom:"0.14rem"}}>
-                                <div>
+                                <NavLink to={{
+                                    pathname:"/songsheet/"+item.id,
+                                    state:{
+                                       data:item
+                                    }
+                                }}>
+                                <div className="RecommendSongSheet-num">
                                     <img style={{marginBottom:"0.15rem"}} src={item.picUrl} style={{width:'100%'}}/>
+                                    <div>
+                                        <i className="iconfont">&#xe647;</i>{item.picUrl.toString().length>4?parseInt((item.playCount)/10000)+"万":item.playCount}
+                                    </div>
+                                   
+                                    {/* <Switch>
+                                        <Route path="/discover/songsheet" exact component={SongSheet}></Route>
+                                    </Switch> */}
                                 </div>
+                                </NavLink> 
                                 <span className="RecommendSongSheet-font">{item.name}</span>
-                            </Col>
+                        </Col>
                     )
                     
                     ))
@@ -42,8 +66,10 @@ export default class RecommendSongSheet extends React.Component{
                             
                     </Row>
                 </div>
-               
+                
             </div>
+            </>
+        
         )
         
     }
@@ -56,5 +82,6 @@ export default class RecommendSongSheet extends React.Component{
       
        async componentDidMount(){
             this.getRecommendSongSheetList()
+            console.log(this.props)
        }
-}
+})
