@@ -29,12 +29,12 @@ class Common extends React.Component{
                             <Row type="flex" justify="space-between">
                                 <nav className="App-header">
              
-									 <Col span={4}><DrawerLeft></DrawerLeft></Col>
-									<Col span={4}><NavLink to={"/my"} activeStyle={{color:'#fff',fontSize:'68px',position:"relative",top:"-2px"}}>我的</NavLink></Col>
-									<Col span={4}><NavLink to={"/discover"} activeStyle={{color:'#fff',fontSize:'68px',position:"relative",top:"-2px"}}>发现</NavLink></Col>
-									<Col span={4}><NavLink to={"/yunvillage"} activeStyle={{color:'#fff',fontSize:'68px',position:"relative",top:"-2px"}}>云村</NavLink></Col>
-									<Col span={4}><NavLink to={"/video"} activeStyle={{color:'#fff',fontSize:'68px',position:"relative",top:"-2px"}}>视频</NavLink></Col>
-									<Col span={4}><NavLink to={"/search"} activeStyle={{color:'#fff',fontSize:'68px',position:"relative",top:"-2px"}}>搜索</NavLink></Col>
+									<Col span={4}><DrawerLeft></DrawerLeft></Col>
+									<Col span={4}><NavLink to={"/my"} activeStyle={{color:'#fff',fontSize:'0.56rem',position:"relative",top:"-0.02rem"}}>我的</NavLink></Col>
+									<Col span={4}><NavLink to={"/discover"} activeStyle={{color:'#fff',fontSize:'0.56rem',position:"relative",top:"-0.02rem"}}>发现</NavLink></Col>
+									<Col span={4}><NavLink to={"/yunvillage"} activeStyle={{color:'#fff',fontSize:'0.56rem',position:"relative",top:"-0.02rem"}}>云村</NavLink></Col>
+									<Col span={4}><NavLink to={"/video"} activeStyle={{color:'#fff',fontSize:'0.56rem',position:"relative",top:"-0.02rem"}}>视频</NavLink></Col>
+									<Col span={4}><NavLink to={"/search"} activeStyle={{color:'#fff',fontSize:'0.56rem',position:"relative",top:"-0.02rem"}}>搜索</NavLink></Col>
                                     
                                 </nav>
                             </Row>
