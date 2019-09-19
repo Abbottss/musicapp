@@ -6,6 +6,7 @@ import Common from "./views/Common";
 import SongSheet from "./views/Discover/SongSheet"
 import Login from "./views/Login";
 import Cellphone from "./views/Cellphone";
+import PlayMusic from "./views/PlayMusic/PlayMusic"
 
 import {
 	BrowserRouter as Router,
@@ -18,6 +19,7 @@ class App extends Component{
 			<Router>
 				<Switch>
 					<Route path={"/songsheet/:id"}  component={SongSheet}></Route>
+					<Route path={"/playmusic/"}  component={PlayMusic}></Route>
 					{/* <Route match='match' path={"/discover"}  component={Discover}></Route> */}
 					<Route path={"/login"} component={Login}></Route>
 					<Route path={"/cellphone"} component={Cellphone}></Route>	

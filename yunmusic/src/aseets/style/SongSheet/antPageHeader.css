@@ -1,0 +1,53 @@
+.PageContent-num{
+    position: relative
+}
+.PageContent-num>div{
+    position: absolute;
+    right:2px;
+    top:1px
+}
+.PageContent-title{
+    padding: 0.1rem 0.5rem;
+}
+.PageContent-name{
+    font-size: 0.4rem;
+    
+    line-height: 0.57rem
+}
+.PageContent-description{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+    font-size: 0.3rem;
+    line-height: 0.35rem
+}
+.PageContent-avatarUrl{
+    width:0.8rem;
+    height: 0.8rem;
+    display: inline-block;
+   position: relative;
+}
+.PageContent-avatarUrl>img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+.PageContent-nickname{
+    padding: 8px 0 9px
+}
+.PageContent-nickname>span{
+    position: relative;
+    top: -0.26rem;
+    font-size:0.34rem;
+    padding-left: 0.26rem
+}
+.PageContent-icon{
+    padding: 19px 2px;
+    font-size: 12px;
+    text-align: center
+}
+.ant-row{
+    display: flow-root
+}

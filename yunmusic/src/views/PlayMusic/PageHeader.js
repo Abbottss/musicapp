@@ -1,7 +1,6 @@
 import React from "react";
 import { Row, Col } from 'antd';
 
-import "../../../aseets/style/SongSheet/antPageHeader.css";
 export default class Page_Header extends React.Component{
     constructor(props){
         super(props);
@@ -19,30 +18,23 @@ export default class Page_Header extends React.Component{
                     </div>
                 </div>
                 </Col>
-                <Col span={14} style={{height:"1.7rem"}}>
+                <Col span={17} style={{height:"1.7rem"}}>
                 <div style={{lineHeight:"1.7rem",height:"1.7rem"}}>
                     <div style={{display:"inline-block",height:"1.7rem"}}>
-                        <p style={{height:"0.5rem",fontSize:"0.5rem"}}>歌单</p>
+                        <p style={{height:"0.5rem",fontSize:"0.5rem"}}>阳光沙滩和你</p>
                         <p style={{
                             fontSize:"0.3rem",color:"#ccc",height:"1rem",width:"6rem",        
                             overflow: "hidden",
                             whiteSpace: "nowrap",
                             textOverflow: "ellipsis",
-                            }}>{this.props.history.location.state.data.copywriter}</p>
+                            }}>G.G(张思源)</p>
                     </div>
                 </div>
                 </Col>
                 <Col span={3}>
-                <div style={{lineHeight:"1.7rem"}}>
+                <div style={{lineHeight:"1.8rem"}}>
                     <div style={{display:"inline-block",height:"1.7rem",textAlign:"center",width:"100%"}}>
-                        <i style={{fontSize:"0.8rem"}} className="iconfont">&#xe62c;</i>
-                    </div>
-                </div>
-                </Col>
-                <Col span={3}>
-                <div style={{lineHeight:"1.7rem"}}>
-                    <div style={{display:"inline-block",height:"1.7rem",textAlign:"center",width:"100%"}}>
-                        <i style={{fontSize:"0.8rem"}} className="iconfont">&#xe640;</i>
+                        <i style={{fontSize:"0.6rem"}} className="iconfont">&#xe65b;</i>
                     </div>
                 </div>
                 </Col>
@@ -51,15 +43,15 @@ export default class Page_Header extends React.Component{
             
         )
     }
-    componentWillReceiveProps(nextProps){
+    // componentWillReceiveProps(nextProps){
         
-        this.setState({
-            data:nextProps.data
-        })   
-        console.log(111,nextProps.data)
-      }
-      componentDidMount() {
-        //   console.log(11111111,this.state.data)
-      }
+    //     this.setState({
+    //         data:nextProps.data
+    //     })   
+    //     console.log(111,nextProps.data)
+    //   }
+    //   componentDidMount() {
+    //     //   console.log(11111111,this.state.data)
+    //   }
       
 }
